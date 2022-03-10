@@ -31,6 +31,23 @@
 
 - Family Tree example: Searching for living person, would be nearer the bottom of the tree. DFS would go lower levels faster than BFS.
 
+### DFS traversal Iterative using Stack
+
+- Follow / Explore one linked path as far as you can, then head back until you find a fork in the road and follow that to the end, then head back until find another untravelled fork in the road. 
+
+- So useful for going through one chain of possibilities till its end, then going through another chain etc.
+
+1. push root vertex to stack
+2. pop vertex from stack (LIFO, so will be the last pushed vertex) and mark as visited
+3. push children or connected vertices of popped vertex to stack.
+4. Repeat from 2 until no more unvisted vertices left, or element found
+
+### DFS traversal Recursive
+
+1. Start from Root
+2. On each child of root, recursively go through each child's children
+3. So follow one branch until find a leaf, then head back up and follow down the next branch until find a leaf.
+
 ## Breadth First Search
 
 - Queue in the iterative version
